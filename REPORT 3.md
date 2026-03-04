@@ -1,23 +1,27 @@
 
 
 
-Nama  : Yedid Worembai 
-NIM   : 254107020254 
-Kelas : TI 1-G  
-Absen : 28  
+## Nama  : Yedid Worembai 
+## NIM   : 254107020254 
+## Kelas : TI 1-G  
+## Absen : 28  
 
 ---
 
-# LAPORAN PRAKTIKUM SISTEM OPERASI
+# LAPORAN PRAKTIKUM SISTEM 
 
-#### 1. File Descriptor
+---
+
+### 1. File Descriptor
 File Descriptor adalah angka (integer) yang merepresentasikan aliran input/output (I/O) pada sistem Linux.
 
 - `0` → stdin (standard input)
 - `1` → stdout (standard output)
 - `2` → stderr (standard error)
 
-#### 2. I/O Redirection
+---
+
+### 2. I/O Redirection
 I/O Redirection digunakan untuk mengalihkan input atau output dari suatu perintah.
 
 Operator yang umum digunakan:
@@ -31,9 +35,11 @@ Contoh:
 ```bash
 ls > hasil.txt
 ls tidakada 2> error.txt
-```
 
-#### 3. Pipe ( | )
+```
+---
+
+### 3. Pipe ( | )
 Pipe digunakan untuk menghubungkan output (stdout) dari satu perintah ke input (stdin) perintah lain.
 
 Contoh:
@@ -43,7 +49,9 @@ ls -l | grep ".txt"
 
 Artinya output `ls -l` akan diproses oleh `grep`.
 
-#### 4. tee
+---
+
+### 4. tee
 Perintah `tee` digunakan untuk:
 
 - Menampilkan output di terminal
@@ -53,16 +61,18 @@ Contoh:
 ```bash
 ls | tee daftar.txt
 ```
+---
 
-#### 5. /dev/null
+### 5. /dev/null
 `/dev/null` adalah null device yang digunakan untuk membuang output yang tidak diperlukan.
 
 Contoh:
 ```bash
 ls tidakada 2> /dev/null
 ```
+---
 
-#### 6. Kombinasi Operator
+### 6. Kombinasi Operator
 Operator-operator dapat dikombinasikan untuk membuat workflow yang lebih kompleks.
 
 Contoh:
@@ -74,7 +84,7 @@ command > all.txt 2>&1
 
 # 1.2 Latihan
 
-### 🔹 Latihan 1.1
+###  Latihan 1.1
 
 Buatlah script yang:
 
@@ -85,7 +95,7 @@ Buatlah script yang:
 
 ---
 
-#### 📌 Perintah yang Digunakan
+####  Perintah yang Digunakan
 
 ```bash
 sudo find /var/log -type f -exec du -h {} + 2> error.log \
@@ -94,7 +104,7 @@ sudo find /var/log -type f -exec du -h {} + 2> error.log \
 | tee large-logs.txt
 ```
 
-#### 🔎 Penjelasan Perintah
+####  Penjelasan Perintah
 
 - `sudo find /var/log -type f`  
   Mencari semua file dalam direktori `/var/log`.
@@ -115,13 +125,13 @@ sudo find /var/log -type f -exec du -h {} + 2> error.log \
   Menampilkan hasil di terminal sekaligus menyimpan ke file `large-logs.txt`.
 
 
-#### 📷 Hasil Eksekusi
+####  Hasil Eksekusi
 
 ![Latihan 1.1](Foto/1.1.png)
 
 ---
 
-### 🔹 Latihan 1.2
+###  Latihan 1.2
 
 Buat pipeline yang:
 
@@ -132,14 +142,14 @@ Buat pipeline yang:
 
 ---
 
-#### 📌 Perintah yang Digunakan
+####  Perintah yang Digunakan
 
 ```bash
 cut -d: -f1 /etc/passwd | sort > sorted-users.txt
 ```
 
 
-#### 🔎 Penjelasan Perintah
+####  Penjelasan Perintah
 
 - `cut -d: -f1 /etc/passwd`  
   Mengambil kolom pertama dari file `/etc/passwd`  
@@ -152,13 +162,13 @@ cut -d: -f1 /etc/passwd | sort > sorted-users.txt
   Menyimpan output ke file `sorted-users.txt`.
 
 
-#### 📷 Hasil Eksekusi
+####  Hasil Eksekusi
 
 ![Latihan 1.2](Foto/1.2.png)
 
 ---
 
-### 🔹 Latihan 3.3
+###  Latihan 3.3
 
 Tulis script monitoring yang:
 
@@ -169,7 +179,7 @@ Tulis script monitoring yang:
 
 ---
 
-#### 📌 Script Monitoring
+####  Script Monitoring
 
 ```bash
 #!/bin/bash
@@ -197,7 +207,7 @@ done
 echo "Monitoring selesai." | tee -a $LOGFILE
 ```
 
-#### 🔎 Penjelasan Script
+####  Penjelasan Script
 
 - `date` → Mengambil timestamp saat ini.
 - `top -bn1` → Mengambil snapshot penggunaan CPU.
@@ -207,13 +217,13 @@ echo "Monitoring selesai." | tee -a $LOGFILE
 - Loop `{1..12}` → Berjalan 12 kali (12 × 5 detik = 60 detik).
 
 
-#### 📷 Hasil Eksekusi
+####  Hasil Eksekusi
 
 ![Latihan 3.3](Foto/1.3.png)
 
 ---
 
-### 🔹 Latihan 3.4
+###  Latihan 3.4
 
 Buat perintah yang:
 
@@ -224,7 +234,7 @@ Buat perintah yang:
 
 ---
 
-#### 📌 Perintah yang Digunakan
+####  Perintah yang Digunakan
 
 ```bash
 sudo find / -type f -name "*.conf" 2>/dev/null | tee conf-files.txt | wc -l
@@ -237,7 +247,7 @@ cat conf-files.txt
 ```
 
 
-#### 🔎 Penjelasan Perintah
+####  Penjelasan Perintah
 
 - `sudo find / -type f -name "*.conf"`  
   Mencari semua file dengan ekstensi `.conf` dari root directory.
@@ -253,12 +263,13 @@ cat conf-files.txt
   Menghitung jumlah baris (jumlah file yang ditemukan).
 
 
-#### 📷 Hasil Eksekusi
+####  Hasil Eksekusi
 
 ![Latihan 3.4](Foto/1.4.png)
 
 ---
-### 🔹 Latihan 3.5
+
+###  Latihan 3.5
 
 Implementasikan script backup yang:
 
@@ -270,7 +281,7 @@ Implementasikan script backup yang:
 
 ---
 
-#### 📌 Script Backup
+####  Script Backup
 
 ```bash
 #!/bin/bash
@@ -298,7 +309,7 @@ echo "File backup: $BACKUP_FILE" | tee -a $SUCCESS_LOG
 ```
 
 
-#### 🔎 Penjelasan Script
+####  Penjelasan Script
 
 - `tar -czvf`  
   Membuat file arsip `.tar.gz` dan menampilkan daftar file yang diproses (verbose).
@@ -319,10 +330,10 @@ echo "File backup: $BACKUP_FILE" | tee -a $SUCCESS_LOG
   Menampilkan output di terminal sekaligus menyimpan ke file log.
 
 
-#### 📷 Hasil Eksekusi
+####  Hasil Eksekusi
 
 ![Latihan 3.5](Foto/1.5.png)
 
 ---
 
-*Jobsheet 3 - Sistem Operasi*
+
