@@ -127,7 +127,8 @@ sudo find /var/log -type f -exec du -h {} + 2> error.log \
 
 ####  Hasil Eksekusi
 
-![Latihan 1.1](Foto/1.1.png)
+<img width="1000" height="388" alt="image" src="https://github.com/user-attachments/assets/74f6ab2a-3863-4a7e-a9f8-1b995dffb463" />
+
 
 ---
 
@@ -163,8 +164,7 @@ cut -d: -f1 /etc/passwd | sort > sorted-users.txt
 
 
 ####  Hasil Eksekusi
-
-![Latihan 1.2](Foto/1.2.png)
+<img width="605" height="642" alt="image" src="https://github.com/user-attachments/assets/004df14b-d085-46fb-82eb-46046c0f354e" />
 
 ---
 
@@ -219,7 +219,8 @@ echo "Monitoring selesai." | tee -a $LOGFILE
 
 ####  Hasil Eksekusi
 
-![Latihan 3.3](Foto/1.3.png)
+<img width="1353" height="615" alt="image" src="https://github.com/user-attachments/assets/3cfe6487-6c7f-4eb6-9d60-e0b782e21dc9" />
+
 
 ---
 
@@ -265,7 +266,8 @@ cat conf-files.txt
 
 ####  Hasil Eksekusi
 
-![Latihan 3.4](Foto/1.4.png)
+<img width="1331" height="846" alt="image" src="https://github.com/user-attachments/assets/aa9a658b-227f-482f-9447-3208ed182770" />
+
 
 ---
 
