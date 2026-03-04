@@ -8,7 +8,7 @@ Absen : 28
 
 ---
 
-## 1.1 📘 Rangkuman Materi Pertemuan 3
+# LAPORAN PRAKTIKUM SISTEM OPERASI
 
 #### 1. File Descriptor
 File Descriptor adalah angka (integer) yang merepresentasikan aliran input/output (I/O) pada sistem Linux.
