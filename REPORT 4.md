@@ -2439,3 +2439,8 @@ Manajemen File dan Konsep Link (Latihan 5-15): Di bagian ini, kita mencoba masuk
 
 ---
 
+### 3.Berikan Kesimpulan dari praktikum ini 
+
+Secara keseluruhan, praktikum ini memberikan pemahaman dasar yang komprehensif mengenai manajemen file dan struktur hierarki direktori pada sistem operasi Linux melalui command line interface (CLI). Dari serangkaian percobaan yang dilakukan, dapat disimpulkan bahwa Linux memiliki sistem manajemen yang sangat terstruktur dan berpusat pada direktori root. Melalui praktikum ini, kita telah berhasil mempraktikkan navigasi direktori (cd, pwd), pembuatan dan penghapusan folder (mkdir, rmdir), serta manipulasi data dasar (cp, mv, rm). Praktikum ini juga membuktikan perbedaan fungsi antara hard link sebagai pengikat data fisik dan symbolic link sebagai shortcut, serta memperlihatkan keandalan utilitas pencarian Linux seperti find dan grep. Terakhir, eksplorasi pada pseudo-filesystem seperti /proc dan /dev menunjukkan bagaimana terminal memberikan akses dan kendali penuh kepada pengguna terhadap status perangkat keras dan proses sistem secara langsung.
+
+---
