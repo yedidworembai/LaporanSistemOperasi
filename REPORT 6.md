@@ -27,7 +27,9 @@ lihat? perbedaannya yaitu ps aux hanya menampilkan prosesnya saja tetapi ps aux 
 ##### Latihan 6.2
 1. Jalankan sleep 120 & dan amati kolom STAT pada ps aux. Kondisi apa yang ditampilkan? Mengapa proses sleep berada di kondisi tersebut?
    Proses sleep berada pada kondisi sleeping (S) karena tugasnya hanya menunggu waktu selesai, sehingga tidak aktif menggunakan CPU.
+   
    <img width="398" height="47" alt="image" src="https://github.com/user-attachments/assets/27d8319c-878b-462a-b1a9-629a5d2b22c3" />
+
 
 2. Jalankan beberapa perintah yang berhasil dan yang gagal, lalu catat exit
 code masing-masing. Pola apa yang Anda temukan?
