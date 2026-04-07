@@ -37,3 +37,11 @@ Nilai exit code 0 menunjukkan bahwa perintah berhasil dijalankan, sedangkan nila
 <img width="648" height="475" alt="image" src="https://github.com/user-attachments/assets/0130100e-7f58-4897-8a1e-ef2942b76295" />
 
 ---
+
+##### Latihan 6.3
+1. Jalankan nice -n 5 sleep 200 & dan verifikasi nilai NI-nya dengan
+ps.
+   
+2. Ubah nilai nice menjadi 10 menggunakan renice, lalu verifikasi kembali.
+3. Coba ubah nilai nice menjadi -5 tanpa sudo. Apa yang terjadi? Mengapa
+Linux membatasi hal ini untuk user biasa?
