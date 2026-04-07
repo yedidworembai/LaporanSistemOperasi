@@ -41,7 +41,8 @@ Nilai exit code 0 menunjukkan bahwa perintah berhasil dijalankan, sedangkan nila
 ##### Latihan 6.3
 1. Jalankan nice -n 5 sleep 200 & dan verifikasi nilai NI-nya dengan
 ps.
-   
+   <img width="587" height="404" alt="Screenshot from 2026-03-10 19-34-51" src="https://github.com/user-attachments/assets/0d6bcf5f-1a36-409d-9fe3-dc2ad5a426da" />
+
 2. Ubah nilai nice menjadi 10 menggunakan renice, lalu verifikasi kembali.
 3. Coba ubah nilai nice menjadi -5 tanpa sudo. Apa yang terjadi? Mengapa
 Linux membatasi hal ini untuk user biasa?
