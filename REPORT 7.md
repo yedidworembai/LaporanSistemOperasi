@@ -1,4 +1,4 @@
-<h1 align="center">JOBSHEET 6 - SISTEM OPERASI</h1>
+<h1 align="center">JOBSHEET 7 - SISTEM OPERASI</h1>
 
 
 **Nama**       : Yedid Worembai
