@@ -88,7 +88,7 @@ Error saat menjalankan perintah cd /<user>/C terjadi akibat kesalahan penulisan 
 ### 2. Kerjakan latihan di atas dan analias tampilannya
 ##### 1.explorasi perintah dasar
 
-did@Yedid:~/Desktop$ cd
+```did@Yedid:~/Desktop$ cd
 did@Yedid:~$ pwd
 /home/did
 did@Yedid:~$ ls -al
@@ -2379,7 +2379,7 @@ Hugetlb:               0 kB
 DirectMap4k:       75712 kB
 DirectMap2M:     2021376 kB
 did@Yedid:/proc$ cat uptime
-9747.05 7142.56
+9747.05 7142.56```
 
 ---
 
